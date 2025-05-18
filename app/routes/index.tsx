@@ -7,7 +7,7 @@ export default function index() {
       <Nav />
       <div className="flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row sm:gap-2 flex py-20 px-36 gap-5 bg-gradient-to-t from-pink-500 to-red-600">
         <div>
-          <img className="h-[550px] " src="./image/home.png" alt="" />
+          <img className="h-[550px] " src="./public/images/hero.png" alt="" />
         </div>
         <div className="pt-36 text-white">
           <h1>
@@ -15,15 +15,9 @@ export default function index() {
             <span className="font-bold text-4xl">Découvrez Baziks APP, </span>
             <br />
             <br />{" "}
-            <span
-              className="text-xl text-white"
-              Le
-              temple
-              de
-              la
-              rumba
-              congolaise
-            ></span>
+            <span className="text-xl text-white">
+              Le temple de la rumba congolaise
+            </span>
             <br />
             <br />
           </h1>
@@ -34,7 +28,7 @@ export default function index() {
             même application. <br />
           </p>
           <br />
-          <img className="h-16" src="./image/buttom.png" alt="" />
+          <img className="h-16" src="./public/images/herobuttun.png" alt="" />
         </div>
       </div>
 
