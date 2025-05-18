@@ -4,15 +4,16 @@ import Nav from '../components/nav'
 export default function index() {
   return (
     <>
-    <Nav/>
-      <div className="flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row sm:gap-2 flex py-20 px-36 gap-5 bg-gradient-to-t from-pink-500 to-red-600">
+    <Nav />
+      <div className="flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row md:gap-20 sm:gap-2 flex py-20 px-36  bg-gradient-to-t from-pink-500 to-red-600">
     <div>
-        <img className="h-[550px] " src="./image/home.png" alt=""/>
+        <img className="h-[550px] " src="./public/images/hero.png" alt=""/>
     </div>
-    <div className="pt-36 text-white">
-        <h1> <span className="font-bold text-4xl">Découvrez Baziks APP, </span><br/><br/> <span className="text-xl text-white"Le temple de la rumba congolaise></span><br/><br/></h1>
+      {/* HERO SECTION */}
+    <div className="md:pt-36 lg:pt-36 xl:pt-36 text-white">
+        <h1> <span className="font-bold text-4xl">Découvrez Baziks APP, </span><br/><br/> <span className="text-xl text-white">Le temple de la rumba congolaise</span><br/><br/></h1>
         <p className="">Toutes les nouveautés du moment dans les deux Congo. Les merveilles du <br/> passé et des morceaux encore méconnus qui seront probablement les hits <br/> de demain, le tout dans une seule et même application. <br/></p><br/>
-        <img className="h-16" src="./image/buttom.png" alt=""/>
+        <img className="h-16" src="./public/images/herobuttun.png" alt=""/>
       </div>
    </div>
 
@@ -50,7 +51,7 @@ export default function index() {
     
   </div>
   <div className="px-36 py-16 bg-red-500">
-    <div className="flex gap-7   flex-col-reverse flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row ">
+    <div className="flex gap-7   flex-col-reverse md:flex-row lg:flex-row xl:flex-row 2xl:flex-row ">
       <div>
         <img className="h-[500px] w-[350px]" src="./image/3.png" alt=""/>
       </div>
