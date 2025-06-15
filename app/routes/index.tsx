@@ -262,8 +262,10 @@ export default function index() {
               </div>
       </div>
       {/* DIXIEMME SECTION */}
-      <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-10 bg-blue-800'>
-
+      <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row'>
+        <div className='z-40 ...'>
+          <img src="Images/youngman.jpeg" alt="" className='h-full w-full'/>
+        </div>
       </div>
       {/* ONZIEMME SECTION */}
       <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-5'>
@@ -271,8 +273,10 @@ export default function index() {
       </div>
 
         {/* DOUZIEME SECTION */}
-        <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-40'>
-
+        <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row'>
+              <div className=''>
+                <img src="Images/youngwoman.jpeg" alt="" className='h-full w-full'/>
+              </div>
         </div>
 
         {/* TREIZIEMME SECTION */}
