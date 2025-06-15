@@ -1,189 +1,317 @@
-import React from "react";
-import Nav from "../components/nav";
+import React from 'react'
+import Nav from 'app/components/nav'
 
 export default function index() {
   return (
     <>
-      <Nav />
-      <div className="flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row sm:gap-2 flex py-20 px-36 gap-5 bg-gradient-to-t from-pink-500 to-red-600">
-        <div>
-          <img className="h-[550px] " src="./image/home.png" alt="" />
+      {/*APPELLE DE LA NAV BARRE  */}
+      <Nav/>
+
+      {/* CONSTRUCTION DE LA PREMIERE SECTION (HERO-SECTION) */}
+      <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-13 bg-gradient-to-t from-pink-700 to-red-500 flex gap-6'>
+      <div>
+        <img src="Images/hero.png" alt="" className='W-[600px] h-[600px]' />
+      </div>
+      <div>
+        <div className='text-white pt-40'>
+          <h1 className='font-bold text-4xl pb-5'>Découvrez Baziks APP,</h1>
+          <h6 className='pb-5'>Le temple de la rumba congolaise</h6>
+          <p>Toutes les nouveautés du moment dans les deux Congo. Les merveilles du <br />passé et des morceaux encore méconnus qui seront probablement les hits de <br />demain, le tout dans une seule et même application.</p>
         </div>
-        <div className="pt-36 text-white">
-          <h1>
-            {" "}
-            <span className="font-bold text-4xl">Découvrez Baziks APP, </span>
-            <br />
-            <br />{" "}
-            <span
-              className="text-xl text-white"
-              Le
-              temple
-              de
-              la
-              rumba
-              congolaise
-            ></span>
-            <br />
-            <br />
-          </h1>
-          <p className="">
-            Toutes les nouveautés du moment dans les deux Congo. Les merveilles
-            du <br /> passé et des morceaux encore méconnus qui seront
-            probablement les hits <br /> de demain, le tout dans une seule et
-            même application. <br />
-          </p>
-          <br />
-          <img className="h-16" src="./image/buttom.png" alt="" />
+        <div>
+        <img src="Images/herobuttun.png" alt="" className=''/>
+        </div>
+      </div>
+      </div>
+      {/* DEUXIEME SECTION */}
+      <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-0 flex'>
+      <div className='pt-5'>
+        <h1 className='text-4xl text-black font-bold '>Grâce à l'appli Baziks,</h1>
+        <p className='text-lg pt-5'>embarque tes sons préférés partout avec toi! <span className='text-red-500'>En savoir plus</span></p>
+        <h1 className='text-4xl text-black font-bold pt-5' >Chaque semaine,</h1>
+        <p className='text-lg pt-5'>nous proposons des nouveaux titres à découvrir!</p>
+      </div>
+      <div >
+        <img src="Images/ecouteurs.png" alt="" className=''/>
+      </div>
+    </div>
+    {/* TROISIEME SECTION */}
+    <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-50'style={{
+    backgroundImage: "url('Images/man.jpg')"}}>
+
+        <h1 className='text-3xl text-white font-bold pb-5'>Pourquoi Baziks ?</h1>
+      <div className='flex gap-10'>
+        <div>
+          <img src="Images/ecouteursbis.png" alt="" className='' />
+        </div>
+        <div>
+          <h1 className='font-bold text-white' >Obtiens plus de liberté…</h1>
+           <p className=' text-white'>N’attend plus qu’on te propose ton disque <br /> préféré,<br />
+             écoute-le comme tu veux… Et laisse toi vibrer !</p>
         </div>
       </div>
 
-      <div className="">
-        <h1 className="font-bold text-4xl">Grâce à l'appli Baziks,</h1>
-        <p className="font-bold">
-          embarque tes sons préférés partout avec toi!{" "}
-          <span>En savoir plus</span>
-        </p>
-        <br />
-        <br />
-        <h1 className="font-bold text-4xl">Chaque semaine,</h1>
-        <p className="font-bold">
-          nous proposons des nouveaux titres à découvrir!
-        </p>
-      </div>
-      <div className="">
-        <img className="" src="./image/headset.png" alt="" />
-      </div>
-      <h1 className="font-bold text-4xl py-5">Pourquoi Baziks ?</h1>
-      <div className-="">
-        <div className="flex gap-5 ">
-          <div>
-            <img src="./image/heardset.png" alt="" />
-          </div>
-          <div>
-            <h1 className="pb-3 font-bold text-xl">Obtiens plus de liberté…</h1>
-            <p className="text-lg">
-              N’attend plus qu’on te propose ton disque préféré,
-              <br /> écoute-le comme tu veux… Et laisse toi vibrer ! <br />{" "}
-              <br />
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-5 py-5">
-          <div>
-            <img src="./image/thermometer.png" alt="" />
-          </div>
-          <div>
-            <h1 className="pb-3 font-bold text-xl">
-              Donne du rythme et de la chaleur à ta journée...
-            </h1>
-            <p className="text-lg">
-              Des journées longues, des moments de concentration,
-              <br /> de stress, de solitude, de détente, ou pendant le <br />{" "}
-              sport... Baziks t’accompagne partout ! <br />
-              <br />
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-5 py-5">
-          <div>
-            <img src="./image/help_poster.png" alt="" />
-          </div>
-          <div>
-            <h1 className="pb-3 font-bold text-xl">
-              Soutien les artistes locaux…
-            </h1>
-            <p className="text-lg">
-              Consomme légalement leurs œuvres pour promouvoir <br />{" "}
-              l’industrie musicale africaine ! <br /> <br />
-            </p>
-          </div>
-        </div>
-        <div className="flex gap-5 py-5">
-          <div>
-            <img src="./image/groupe_44_poster.png" alt="" />
-          </div>
-          <div>
-            <h1 className="pb-3 font-bold text-xl ">
-              Contribue en retour à aider la communauté…
-            </h1>
-            <p className="text-lg">
-              Avec ton abonnement, tu participe automatique au <br /> programme
-              Baziks4Dev.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div className="px-36 py-16 bg-red-500">
-        <div className="flex gap-7   flex-col-reverse flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row ">
-          <div>
-            <img className="h-[500px] w-[350px]" src="./image/3.png" alt="" />
-          </div>
-          <div className="text-white py-5">
-            <h1 className="text-4xl font-bold">
-              Bienvenu dans un autre univer: c'est mon premier site en ligne
-            </h1>
-            <br />
-            <p className="text-lg">
-              Un univers hors du commun ou les pepites sonors longtemps
-              negligées constituent plus que <br /> jamais une valeur
-              inestimable pour toute une nation. Oubliez le cobalt, l'or, le
-              coltan, le diamant...
-            </p>{" "}
-            <br />
-            <p className="text-lg">
-              La veritable richesse et là, l'âme de tout le peuple !
-            </p>{" "}
-            <br />
-            <p className="text-lg">
-              Baziks, c’est ce nouvel univers qui regorge pour vous des pépites
-              sonores issues de toutes <br /> les provinces d’une nation
-              mosaïque !
-            </p>{" "}
-            <br />
-            <p className="text-lg">
-              Un univers rythmé, coloré, et sans cesse en mouvement centré sur
-              la rumba congolaise!{" "}
-            </p>
-            <p className="text-lg">Un son… et la rue est à vos pieds !</p>{" "}
-            <br />
-            <p className="text-lg">
-              Un style… et le monde entier se met à danser sur les battements de
-              vos téléphones grâce à <br />
-              une ambitieuse application !
-            </p>
-            <p className="text-lg">
-              L’énergie, le rythme de tout un continent depuis le cœur de
-              l’Afrique sont désormais <br /> accessible au bout de vos doigts !
-            </p>{" "}
-            <br />
-            <p className="text-lg">
-              Baziks, l’unique application de streaming 100% musique locale !
-            </p>
-          </div>
-        </div>
-      </div>
-      <div>
+      <div className='flex gap-15 pt-10'>
         <div>
+          <img src="Images/thermo.png" alt="" className='' />
+        </div>
+        <div>
+          <h1 className='font-bold text-white'>Donne du rythme et de la chaleur à ta <br /> journée…</h1>
+           <p className=' text-white'>Des journées longues, des moments de <br /> concentration,<br />de stress, de solitude, de détente, ou pendant le <br />
+            sport... Baziks t’accompagne partout !</p>
+        </div>
+      </div>
+
+      <div className='flex gap-5 pt-10'>
+        <div>
+          <img src="Images/mains.png" alt="" className='' />
+        </div>
+        <div>
+          <h1 className='font-bold text-white' >Soutien les artistes locaux…</h1>
+           <p className=' text-white'>Consomme légalement leurs œuvres pour <br /> promouvoir <br />
+            l’industrie musicale africaine !</p>
+        </div>
+      </div>
+
+      <div className='flex gap-5 pt-10'>
+        <div>
+          <img src="Images/men.png" alt="" className='' />
+        </div>
+        <div>
+          <h1 className='font-bold text-white'>Contribue en retour à aider la <br /> communauté…</h1>
+           <p className=' text-white'>Avec ton abonnement, tu participe automatique <br /> au <br />
+            programme Baziks4Dev.</p>
+        </div>
+      </div>
+    </div>
+
+    {/* QUATRIEME SECTION */}
+    <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-5 bg-orange-600 flex gap-20'>
+      <div className='pb-20'><img src="Images/phone.png" alt="" className='w-[400px] h-[500px]'/></div>
+      <div className='text-white'>
+        <h1 className='text-2xl font-bold'>Bienvenu dans un autre univers…</h1>
+        <p className='pt-5'>Un univers hors du commun ou les pepites sonors longtemps negligées constituent plus <br /> que jamais une valeur inestimable pour toute une nation. Oubliez le cobalt, l'or, le coltan,<br /> le diament...</p>
+        <p className='pt-5'>La veritable richesse et là, l'âme de tout le peuple !</p>
+        <p className='pt-5'>Baziks, c’est ce nouvel univers qui regorge pour vous des pépites sonores issues de <br /> toutes les provinces d’une nation mosaïque !</p>
+        <p className='pt-5'>Un univers rythmé, coloré, et sans cesse en mouvement centré sur la rumba congolaise !</p>
+        <p className='pt-5'>Un son… et la rue est à vos pieds !</p>
+        <p className='pt-5'>Un style… et le monde entier se met à danser sur les battements de vos téléphones grâce <br /> à une ambitieuse application !</p>
+        <p className='pt-5'>L’énergie, le rythme de tout un continent depuis le cœur de l’Afrique sont désormais <br /> accessible au bout de vos doigts !</p>
+        <p className='pt-5'>Baziks, l’unique application de streaming 100% musique locale !</p>
+      </div>
+    </div>
+
+      {/* CINQUIEME SECTION */}
+    <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-10 flex gap-40 bg-black'>
+      <div>
+        <img src="Images/afrique.png" alt="" className='' />
+      </div>
+        <div className='text-white'>
+          <h1 className='font-bold'>Des genres musicaux variés, reflet de la <br />
+             diversité des deux Congo</h1>
+          <p>Baziks propose une variété de titres, répartis selon les <br />
+          genres les plus prisés dans les deux Congo.</p>
+        
+          <div className='flex gap-5 pt-10'>
           <div>
-            <img src="./image/groupe_168.png" alt="" />
+            <img src="Images/puces.png" alt="" className='' />
           </div>
           <div>
-            <h1>
-              Des genres musicaux variés, reflet de la diversité des deux Congo
-            </h1>
-            <p>
-              Baziks propose une variété de titres, répartis selon les genres
-              les plus prisés dans les deux Congo.
-            </p>
-          </div>
-          <div>
-            <div className="check-box">
-              <img src="./image/" alt="" />
+            <ul>
+              <li>Hiphop/rnb</li>
+              <li className='pt-5'>Ndombolo</li>
+              <li className='pt-5'>Ndombolo</li>
+              <li className='pt-5'>Gospel</li>
+              <li className='pt-5'>Afro-Urban</li>
+              <li className='pt-5'>Musique folklorique</li>
+              <li className='pt-5'>Afro-Fusion</li>
+            </ul>
             </div>
           </div>
+          </div>
+          
+      </div>
+      
+      {/*SIXIEMME SECTION  */}
+
+        {/* PREMIERE PARTIE */}
+
+      <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-20 flex gap-20 bg-gray-200'>
+        <div>
+          <h1 className='text-pink-700 text-2xl font-bold'>Des offres exceptionnelles !</h1>
+            <p className='text-xl pb-10'>Laisses la musique congolaise s’exprimer en toi en <br />
+                #ILLIMITEETNONSTOP avec un plan tarifaire unique !</p>
+                <div className='border border-blue-800 rounded w-130 h-80 bg-blue-400 px-5 py-5'>
+                  <h1 className='text-2xl text-white font-bold'>Ya Ofélé</h1>
+                  <div className='flex gap-5 pt-5'>
+                    <div>
+                      <img src="Images/lignebleu.png" alt="" className='' />
+                    </div>
+                    <div>
+                      <ul className='text-white'>
+                        <li>Music non Stop</li>
+                        <li className='pt-4 gap-5'>Playlist illimitée</li>
+                        <li className='pt-4 gap-5'>Publicité</li>
+                        <li className='pt-4 gap-5'>Pérsonalisation</li>
+                      </ul>
+                    </div>
+                    <div>
+                         <img src="Images/zero$.png" alt="" className='h-[25px]'/>
+                      </div>
+                    </div>
+                </div>
+        </div>
+              {/* DEUXIEME PARTIE */}
+              <div>
+          <h1 className='text-pink-700 text-2xl font-bold'>Choisir le plan le plus adapté</h1>
+            <p className='text-lg pb-3'>Des packages abonnement d’écoute de musique <br /> #ILLIMITEETNONSTOP (Abonnement accessible uniquement via <br />
+                          nos Pass Miziki dans nos points de vente).</p>
+                <div className='border border-blue-800 rounded w-130 h-80 bg-pink-600 px-5 py-5'>
+                  <h1 className='text-lg text-white font-bold'>Ya</h1>
+                  <h1 className='text-lg text-white fnt-bold'>VIP</h1>
+                  <div className='flex gap-5 pt-2'>
+                    <div>
+                      <img src="Images/lignerose.png" alt="" className='' />
+                    </div>
+                    <div>
+                      <ul className='text-white'>
+                        <li className='pb-1'>Music non Stop</li>
+                        <li className='pt-3 gap-5'>Playlist illimitée</li>
+                        <li className='pt-4 gap-5'>Non Pub</li>
+                        <li className='pt-4 gap-5'>Pérsonalisation</li>
+                        <li className='pt-4 gap-5'>Des bonus</li>
+                        <li className='pt-4 gap-5'>Des récompenses</li>
+                      </ul>
+                    </div>
+                    <div className='text-white'>
+                         <h1 className='font-bold'>$1,49</h1>
+                         <p>pour 1 mois d'abonnement + 10 <br />
+                           jours gratuits offerts</p>
+                         <h1 className='font-bold'>$14,99</h1>
+                         <p>pour 12 mois d'abonnement + 1 <br />
+                           mois gratuit offert</p>
+                      </div>
+                    </div>
+                </div>
         </div>
       </div>
+
+      {/* SEPTIEMME SECTION */}
+      <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-15 flex gap-40'>
+          <div>
+              <img src="Images/baziks-pass2.png" alt="" className='rotate-90'/>
+              <img src="Images/baziks-pass3.png" alt="" className='rotate-90'/>
+              <img src="Images/baziks-pass1.png" alt="" className='rotate-90'/>
+          </div>
+          <div>
+              <h1 className='text-red-600 text-3xl font-bold pb-5'>Qu’est-ce qu’est le Pass Miziki ?</h1>
+              <h6 className='font-bold pb-5'>Le Pass Miziki est une innovation Baziks en Partenariat avec MaxiCash !</h6>
+              <p>Le « Pass Miziki », c’est la carte qui te permet d’accéder à l’offre VIP de Baziks.</p>
+              <h6 className='font-bold pt-5'>Comment ca marche ?</h6>
+              <p className='pt-5'>Après avoir acheté ton « Pass Miziki » chez nos revendeurs. Gratte sur la partie cachée,<br /> récupère le code pin, puis tape le dans le menu abonnement <br />
+                 sur Baziks. Et profite à fond de ton accès VIP. Puis localise le point de vente le plus proche :</p>
+              <h6 className='pt-5 font-bold'>Quel avantage ?</h6>
+              <p className='pt-5'>Véritable outil de monétisation, le « Pass Miziki » te permet d’accéder librement à un max <br />de musique dans Baziks quelque soit ton opérateur mobile. <br />
+                Tu peux écouter ta musique sans publicité. Ou même offrir un « Pass Miziki » en cadeau à <br /> des proches. Il en existe pour 0,10 cents, de 0,70 cents et 2,99$, le tout avec des bonus.</p>
+              <h6 className='pt-5 font-bold'>Comment obtenir ton « Pass Miziki » ?</h6>
+              <p className='pt-5'>Il suffit de contacter notre service client à commercial@baziks-pulse.com ou par WhatsApp 0904088973.</p>
+    
+          </div>
+      </div>
+      {/* HUITIEMME SECTION */}
+      <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row justify-center  px-22 py-20 bg-linear-to-t from- bg-[#470927] to-black '>
+      <div className='text-center '>
+        <h1 className='text-3xl text-white font-bold'>Obtenir un Pass Miziki</h1> 
+        <h1 className='text-white '>Pour obtenir ton Pass Miziki c’est très facile, il suffit de choisir celui qui convient à ton budget.</h1> 
+        <h1 className='text-white '>Puis localise le point de vente le plus proche :</h1> 
+        
+      <div className='flex gap-5 justify-center items-center'>
+        <img src="Images/ballers.png" alt="" className=''/>
+        <img src="Images/surprise-tropicale.png" alt="" className=''/>
+      </div>
+      <h1 className='text-white'>Puis localise le point de vente le plus proche :</h1> 
+      </div>
+      </div>
+      {/*  NEUVIEMME SECTION */}
+      <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row bg-gradient-to-b from-red-600 to bg-pink-400 flex gap-5'>
+         <div className='text-white py-4 sm:text-center sm:w-full px-4 md:text-right md:w-1/2 md:px-0 '> 
+         <h1 className='font-bold text-3xl '>À propos</h1> 
+         <p>Baziks, c’est l’application de streaming musical qui <br />
+            Baziks, c’est l’application de streaming musical qui <br />
+            permet d’écouter en exclusivité le meilleur de la <br />
+            musique congolaise gratuitement ou par abonnement,<br />
+            avec un accès instantané à des <br />
+            centaines de milliers de titres disponibles partout <br />
+            et à tout moment. <br />
+            Baziks App fait partie de Baziks Partners SAS, l’un <br />
+            des précurseurs du streaming musical en Afrique. <br />
+            Baziks App a été lancée fin juillet 2016. Sa société <br />
+            mère, Baziks Partners, fondée par Baya Ciamala <br />
+            est opérationnelle depuis Janvier 2019, avec des <br />
+            équipes à Kinshasa et Lubumbashi en République <br />
+            Démocratique du Congo, à Libreville au Gabon, à <br />
+            Johannesburg en Afrique du Sud et des ingénieurs <br />
+            congolais basés notamment à Newcastle <br />
+            et Londres au Royaume-Uni. <br />
+            Souvent surnommé le "Deezer" africain par la <br />
+            presse du continent, Baziks est l’un des principaux <br />
+            services de musique en ligne africain au monde.</p> 
+         </div>
+              <div className='w-1/2 hidden'>
+                <img src="Images/aproposnoir.jpeg" alt="" className='h-full'/>
+              </div>
+      </div>
+      {/* DIXIEMME SECTION */}
+      <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-10 bg-blue-800'>
+
+      </div>
+      {/* ONZIEMME SECTION */}
+      <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-5'>
+            <img src="Images/baziks.png" alt="" className=''/>
+      </div>
+
+        {/* DOUZIEME SECTION */}
+        <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-40'>
+
+        </div>
+
+        {/* TREIZIEMME SECTION */}
+        <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-20'>
+              <img src="Images/icones.png" alt="" className=''/>
+        </div>
+
+        {/* QUARTOZIEMME SECTION */}
+        <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-20 bg-black'>
+              <div className='flex gap-20 pb-20'>
+                <div><img src="/Images/logo.png" alt="" className='' /></div>
+                <div className='text-white'>
+                  <p>848 Avenue Haut Congo, Gombe <br />Kinshasa, RDC <br /> info@baziks-pulse.com</p>
+                </div>
+                <div className='text-white'>
+                  <p>A propos <br />Presse <br /> Proposer votre contenu <br />Nous contacter</p>
+                </div>
+                <div className='text-white'>
+                  <p>Blog <br />Conditions d'utilisation <br />Politique de confidentialité</p>
+                </div>
+                </div>
+                  <div className='border'></div>
+                  <div className='flex gap-150 pt-5'>
+                  <div className='text-white '>
+                    <p><span className='text-red-600'>Copyright © 2022. All Rights Reserved by Baziks</span><br />DEVELOPED BY KASAÏ CONNECT</p>
+                  </div>
+                  <div className='flex gap-5'>
+                    <img src="Images/twiter.svg" alt="" className='h-[15px]' />
+                    <img src="Images/facebook_icon.svg" alt="" className='h-[15px]' />
+                    <img src="Images/instagram.svg" alt="" className='h-[15px]' />
+                    <img src="Images/LINKEDIN.svg" alt="" className='h-[15px]' />
+                  </div>
+                  </div>
+
+                
+              
+        </div>
+              
+        
     </>
-  );
+  )
 }
