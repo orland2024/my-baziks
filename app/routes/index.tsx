@@ -141,7 +141,7 @@ export default function index() {
           <h1 className='text-pink-700 text-2xl font-bold'>Des offres exceptionnelles !</h1>
             <p className='text-xl pb-10'>Laisses la musique congolaise s’exprimer en toi en <br />
                 #ILLIMITEETNONSTOP avec un plan tarifaire unique !</p>
-                <div className='border border-blue-800 rounded w-130 h-80 bg-blue-400 px-5 py-5'>
+                <div className='border border-blue-800 rounded w-130 h-80  bg-blue-400 px-5 py-5'>
                   <h1 className='text-2xl text-white font-bold'>Ya Ofélé</h1>
                   <div className='flex gap-5 pt-5'>
                     <div>
@@ -199,9 +199,9 @@ export default function index() {
       {/* SEPTIEMME SECTION */}
       <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-15 flex gap-40'>
           <div>
-              <img src="Images/baziks-pass2.png" alt="" className='rotate-90'/>
-              <img src="Images/baziks-pass3.png" alt="" className='rotate-90'/>
-              <img src="Images/baziks-pass1.png" alt="" className='rotate-90'/>
+              <img src="Images/baziks-pass2.png" alt="" className='rotate-129'/>
+              <img src="Images/baziks-pass3.png" alt="" className='rotate-110'/>
+              <img src="Images/baziks-pass1.png" alt="" className='rotate-100'/>
           </div>
           <div>
               <h1 className='text-red-600 text-3xl font-bold pb-5'>Qu’est-ce qu’est le Pass Miziki ?</h1>
@@ -214,7 +214,7 @@ export default function index() {
               <p className='pt-5'>Véritable outil de monétisation, le « Pass Miziki » te permet d’accéder librement à un max <br />de musique dans Baziks quelque soit ton opérateur mobile. <br />
                 Tu peux écouter ta musique sans publicité. Ou même offrir un « Pass Miziki » en cadeau à <br /> des proches. Il en existe pour 0,10 cents, de 0,70 cents et 2,99$, le tout avec des bonus.</p>
               <h6 className='pt-5 font-bold'>Comment obtenir ton « Pass Miziki » ?</h6>
-              <p className='pt-5'>Il suffit de contacter notre service client à commercial@baziks-pulse.com ou par WhatsApp 0904088973.</p>
+              <p className='pt-5'>Il suffit de contacter notre service client à <a href='commercial@baziks-pulse.com'>commercial@baziks-pulse.com</a>  ou par WhatsApp 0904088973.</p>
     
           </div>
       </div>
@@ -235,8 +235,8 @@ export default function index() {
       {/*  NEUVIEMME SECTION */}
       <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row bg-gradient-to-b from-red-600 to bg-pink-400 flex gap-5'>
          <div className='text-white py-4 sm:text-center sm:w-full px-4 md:text-right md:w-1/2 md:px-0 '> 
-         <h1 className='font-bold text-3xl '>À propos</h1> 
-         <p>Baziks, c’est l’application de streaming musical qui <br />
+         <h1 className='font-bold text-3xl text-center'>À propos</h1> 
+         <p className='text-center'>Baziks, c’est l’application de streaming musical qui <br />
             Baziks, c’est l’application de streaming musical qui <br />
             permet d’écouter en exclusivité le meilleur de la <br />
             musique congolaise gratuitement ou par abonnement,<br />
@@ -257,8 +257,8 @@ export default function index() {
             presse du continent, Baziks est l’un des principaux <br />
             services de musique en ligne africain au monde.</p> 
          </div>
-              <div className='w-1/2 hidden'>
-                <img src="Images/aproposnoir.jpeg" alt="" className='h-full'/>
+              <div className='w-1/2 mx-auto'>
+                <img src="Images/aproposnoir.jpeg" alt="" className='h-full '/>
               </div>
       </div>
       {/* DIXIEMME SECTION */}
@@ -274,14 +274,43 @@ export default function index() {
 
         {/* DOUZIEME SECTION */}
         <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row'>
-              <div className=''>
+              <div className='relative'>
                 <img src="Images/youngwoman.jpeg" alt="" className='h-full w-full'/>
+                <div className='absolute inset-0 flex justify-center'>
+                  <div>
+                    <h1 className='text-white text-4xl font-bold px-25 py-10'> Notre ADN : <br />La proximité</h1>
+                    <p className='text-white px-22'>
+                      La proximité pour Baziks, c’est plus qu’un simple ciblage géographique !
+                      Au-delà du catalogue 100% musique africaine, la notion de proximité  trouve son sens <br />
+                      dans la complicité développée entre nous et notre audience. Et en permettant aux artistes <br />
+                      de se connecter à leurs fans afin d’interagir ensemble. <br /> Car nous croyons  fortement que ces 
+                      sont les créateurs qui font l'industrie de la musique. <br /> Nous voulons garantir  le pluralisme et la diversité de contenus avec des offres accessibles, 
+                      tout en se constituant en indicateur d’une industrie musicale dynamique,  indépendante <br />
+                      et viable sur l’ensemble du continent africain. Véritable alternative aux <br /> plateformes mainstream, Baziks App se veut être une vitrine pour 
+                      les artistes africains, garantissant une rémunération convenable et en  les impliquant en <br />
+                      tant qu’acteur de développement pour les communautés. Nous sommes définitivement tourné vers une valorisation différente de nos musiques. Nous sommes 100% local !
+                    </p>
+                    </div>
+                  <div>
+                    <p className='text-white py-10 px-22'>
+                      Nous sommes une Start-Up en pleine croissance dont l’ambition
+                      est de proposer une expérience musicale mobile, connectée et
+                      lifestyle, tout en étant ancré sur les questions d’intérêt du marché
+                      local de la musique. <br />
+                      Jeunes, motivés et dynamique, nous sommes également attaché de
+                      façon forte dans l’atteinte objectifs de développement durable
+                      comme l’éducation et la lutte contre la pauvreté via les
+                      programmes #Baziks4Dev et #Baziks4Good. <br />
+                    </p>
+                    </div>
+                </div>
               </div>
         </div>
 
         {/* TREIZIEMME SECTION */}
         <div className='flex-col sm:flex-row md:flex-row lg:flex-row xl:flex-row 2xl:flex-row 3xl:flex-row 4xl:flex-row px-22 py-20'>
-              <img src="Images/icones.png" alt="" className=''/>
+              <h1 className='text-4xl font-bold text-black text-center'>Il nous font confiance</h1>
+              <img src="Images/icones.png" alt="" className='pt-10'/>
         </div>
 
         {/* QUARTOZIEMME SECTION */}
@@ -310,12 +339,7 @@ export default function index() {
                     <img src="Images/LINKEDIN.svg" alt="" className='h-[15px]' />
                   </div>
                   </div>
-
-                
-              
         </div>
-              
-        
     </>
   )
 }
